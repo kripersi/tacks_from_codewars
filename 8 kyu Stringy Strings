@@ -1,0 +1,8 @@
+def stringy(size):
+    n = '1'
+    while len(n) != size:
+        if n[-1] == '1':
+            n += '0'
+        else:
+            n += '1'
+    return n
