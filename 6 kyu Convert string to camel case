@@ -1,0 +1,9 @@
+def to_camel_case(text):
+    new_text = text.replace('_', ' ').replace('-', ' ').split()
+    n = ''
+    for i in new_text:
+        if i == new_text[0]:
+            n += i
+        else:
+            n += i.title()
+    return n
