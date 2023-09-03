@@ -1,0 +1,7 @@
+def accum(s):
+    end_str = ''
+    c = 1
+    for letter in s:
+        end_str += letter.upper()+letter.lower()*(c-1) + '-'
+        c += 1
+    return end_str[:-1]
