@@ -1,0 +1,9 @@
+from string import ascii_lowercase as au
+
+
+def find_missing_letter(chars):
+    upper_let = au[au.index(chars[0].lower()) : au.index(chars[-1].lower())]
+    for i in upper_let:
+        if i.lower() in chars or i.upper() in chars:
+            continue
+        return f'{i.upper()}' if chars[0].isupper() else f'{i.lower()}'
