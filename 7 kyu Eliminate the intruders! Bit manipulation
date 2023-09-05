@@ -1,0 +1,5 @@
+def eliminate_unset_bits(number):
+    try:
+        return int(number.replace('0', ''), 2)
+    except:
+        return 0
