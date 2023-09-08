@@ -1,0 +1,3 @@
+def solution(a, b):
+    list = [a, b]
+    return min(list, key=len) + max(list, key=len) + min(list, key=le
