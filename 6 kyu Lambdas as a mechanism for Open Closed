@@ -1,0 +1,5 @@
+spoken    = lambda greeting: greeting[0].upper() +  greeting[1:].lower() + '.'
+shouted   = lambda greeting: greeting.upper() + '!'
+whispered = lambda greeting: greeting.lower() + '.'
+
+greet = lambda style, msg: style(msg)
