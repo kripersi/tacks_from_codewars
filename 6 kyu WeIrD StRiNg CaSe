@@ -1,0 +1,8 @@
+def to_weird_case(words):
+    s = '' + words[0].upper()
+    for i in range(1, len(words.lower())):
+        if words[i].isalpha() and s[-1].isupper():
+            s += words[i].lower()
+        else:
+            s += words[i].upper()
+    return s
