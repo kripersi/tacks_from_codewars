@@ -1,0 +1,8 @@
+def flick_switch(lst):
+    ans = []
+    b = True
+    for x in lst:
+        if x == "flick":
+            b = not b
+        ans.append(b)
+    return ans
