@@ -1,0 +1,7 @@
+def char_concat(word):
+    s = ''
+    c = 1
+    for i in range(len(word)//2):
+        s += f'{word[i]}{word[-(i+1)]}{c}'
+        c += 1
+    return s
